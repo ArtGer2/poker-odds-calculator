@@ -15,3 +15,10 @@ This project is a C++/Qt application designed to calculate poker win probabiliti
 - Qt Framework (5.15+ recommended)
 - C++17 or higher
 - CMake or qmake
+
+## Screenshots
+### Main Interface
+
+### Dragging and Dropping Cards
+
+### Final Probability Display
