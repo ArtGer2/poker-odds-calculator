@@ -20,6 +20,10 @@ This project is a C++/Qt application designed to calculate poker win probabiliti
 ### Main Interface
 ![image](https://github.com/user-attachments/assets/50fef170-205e-448c-8ab5-03b9ad7ac278)
 
-### Dragging and Dropping Cards
+### Window for selecting cards
+ ![image](https://github.com/user-attachments/assets/8795a541-4f2c-4293-834f-38eca98f4a4a)
 
-### Final Probability Display
+### Example of tables with calculated odds of winning
+![image](https://github.com/user-attachments/assets/a19e4875-fd6f-47e0-b63a-c144ed20c524)
+![image](https://github.com/user-attachments/assets/e3c17e20-45ca-44c8-b6cb-e42427bb1183)
+![image](https://github.com/user-attachments/assets/d912bc4e-5585-42f8-a8cf-b59d16537c00)
