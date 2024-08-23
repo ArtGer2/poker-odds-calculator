@@ -20,16 +20,13 @@ void DraggableLabel::restoreLastPosition() {
 void DraggableLabel::mousePressEvent(QMouseEvent *event) {
 
     if (event->button() == Qt::LeftButton) {
-        // Начало перетаскивания
+
         emit textDelete(this->label->text());
         restoreLastPosition();
         QDrag *drag = new QDrag(this);
         QMimeData *mimeData = new QMimeData;
 
-        // Установите необходимые данные в mimeData
 
-
-        // Упаковываем указатель на виджет в MIME данные
         QByteArray data;
         QDataStream stream(&data, QIODevice::WriteOnly);
         stream << (quintptr)this;
@@ -37,11 +34,9 @@ void DraggableLabel::mousePressEvent(QMouseEvent *event) {
 
 
 
-        // Задайте изображение для перетаскивания
         drag->setMimeData(mimeData);
         drag->setPixmap(this->grab());
 
-        // Выполните перетаскивание
         drag->exec(Qt::MoveAction);
     }
 }

@@ -18,7 +18,7 @@ void CardChoise::createCard(QGridLayout *gridLayout, int &row, int &column, cons
 
     DraggableLabel *draggableLabel = new DraggableLabel(drop);
 
-    QSize initialSize(150, 225); // Пример размера, можно изменить в зависимости от потребностей
+    QSize initialSize(150, 225);
     draggableLabel->setFixedSize(initialSize);
     draggableLabel->label ->setFixedSize(initialSize);
     QPixmap pixmap(imagePath);
@@ -44,7 +44,7 @@ void CardChoise::make_card_table() {
     int row = 0;
     int column = 0;
 
-    // Карты от 2 до 9
+
     for (char num = '2'; num <= '9'; num++) {
         for (char suit : {'h', 'd', 'c', 's'}) {
             QString cardText = QString(QChar(num)) + QChar(suit);
@@ -53,7 +53,7 @@ void CardChoise::make_card_table() {
         }
     }
 
-    // Карты 10, J, Q, K, A
+
     QStringList specialCards = {"10", "J", "Q", "K", "A"};
     for (const QString &card : specialCards) {
         for (char suit : {'h', 'd', 'c', 's'}) {
@@ -63,10 +63,9 @@ void CardChoise::make_card_table() {
         }
     }
 
-    // Задание фиксированного размера для ячеек
-    for (int i = 0; i < 10; ++i) {
-        gridLayout->setColumnMinimumWidth(i, 50); // Установите минимальную ширину для каждого столбца
-        gridLayout->setRowMinimumHeight(i, 50);  // Установите минимальную высоту для каждой строки
+    for (int i = 0; i < 12; ++i) {
+        gridLayout->setColumnMinimumWidth(i, 50);
+        gridLayout->setRowMinimumHeight(i, 50);
     }
 }
 

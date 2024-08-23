@@ -1,6 +1,7 @@
 #include "mainwindow.h"
 #include "./ui_mainwindow.h"
-//#include "draggablelabel.h"
+
+
 #include "game.h"
 #include <vector>
 
@@ -60,19 +61,19 @@ void MainWindow::onTextDropped(DropLabel* source, const QString& text) {
 }
 
 Card parseCard(const QString& cardStr) {
-    // Проверка длины строки
+
     if (cardStr.length() < 2) {
         throw std::invalid_argument("Invalid card string format");
     }
 
-    // Извлечение ранга
+
     QString rankStr = cardStr.left(cardStr.length() - 1);
     QChar suitChar = cardStr.back();
 
     Rank rank;
     Suit suit;
 
-    // Преобразование строки ранга в перечисление Rank
+
     if (rankStr == "2") rank = TWO;
     else if (rankStr == "3") rank = THREE;
     else if (rankStr == "4") rank = FOUR;
@@ -88,7 +89,6 @@ Card parseCard(const QString& cardStr) {
     else if (rankStr == "A") rank = ACE;
     else throw std::invalid_argument("Invalid rank");
 
-    // Преобразование символа масти в перечисление Suit
     if (suitChar == 'h') suit = HEARTS;
     else if (suitChar == 'd') suit = DIAMONDS;
     else if (suitChar == 'c') suit = CLUBS;
@@ -114,14 +114,14 @@ void MainWindow::GameStart(){
         }
     }
     if(Player.size()==2 && Table.size() >=3){
-        int numOpponents = ui->spinBox->value();  // Получаем значение из QSpinBox
+        int numOpponents = ui->spinBox->value();
 
         QFuture<void> future = QtConcurrent::run([Player, Table, numOpponents, this]() {
             try {
-                Game game(Player, Table);  // Создание объекта game внутри лямбда-функции
-                auto result = game.calculateWinProbability(numOpponents-1, 1000);  // Используем значение из QSpinBox
-                ui->winLabel->setText(QString::number(result.first * 100, 'f', 2) + '%');  // Преобразуем double в QString и добавляем знак процента
-                ui->TieLabel->setText(QString::number(result.second * 100, 'f', 2) + '%'); // Преобразуем double в QString и добавляем знак процента
+                Game game(Player, Table);
+                auto result = game.calculateWinProbability(numOpponents-1, 1000);
+                ui->winLabel->setText(QString::number(result.first * 100, 'f', 2) + '%');
+                ui->TieLabel->setText(QString::number(result.second * 100, 'f', 2) + '%');
 
             } catch (const std::exception &e) {
                 qDebug() << "Exception caught:" << e.what();

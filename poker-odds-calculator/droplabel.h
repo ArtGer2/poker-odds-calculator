@@ -18,8 +18,8 @@ class DropLabel : public QWidget
 public:
     DraggableLabel *draggedWidget;
     explicit DropLabel(QWidget *parent = nullptr);
-    QString getCardText() const;       // Возвращает текст карты
-    void setCardText(const QString& text); // Устанавливает текст карты
+    QString getCardText() const;
+    void setCardText(const QString& text);
 
 
 protected:
@@ -33,7 +33,7 @@ public slots:
     void onTextDelete(const QString& text);
 
 private:
-    QLabel *imageLabel; // QLabel для отображения изображения
+    QLabel *imageLabel;
     QString currentCardText;
 
 };

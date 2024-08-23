@@ -8,7 +8,7 @@ class Hand {
 public:
     std::vector<Card> cards;
 
-    // Перечисление для ранжирования покерных комбинаций
+
     enum HandRank {
         HIGH_CARD,
         PAIR,
@@ -21,20 +21,20 @@ public:
         STRAIGHT_FLUSH
     };
 
-    // Конструктор руки
+
     Hand(std::vector<Card> c);
 
-    // Оценка руки (возвращает ранжирование покерной комбинации)
+
     HandRank evaluate() const;
     static Hand findBestHand(const std::vector<Card>& sevenCards);
-    // Оператор сравнения меньше для рук
+
     bool operator<(const Hand& other) const;
     bool operator>(const Hand& other) const;
 
     bool operator==(const Hand& other) const;
 
 private:
-    // Проверки на различные покерные комбинации
+
     bool isStraightFlush() const;
     bool isFourOfAKind() const;
     bool isFullHouse() const;
@@ -44,10 +44,10 @@ private:
     bool isTwoPair() const;
     bool isPair() const;
 
-    // Вспомогательная функция для проверки N-карт одной масти
+
     bool hasNOfAKind(int n) const;
 
-    // Сравнение рук с одинаковым рангом
+
     bool compareSameRank(const Hand& other) const;
 };
 

@@ -36,7 +36,7 @@ private:
     std::vector<QString> tableCards= {NULL,NULL,NULL,NULL,NULL};
 
 
-    QFutureWatcher<void> futureWatcher; // Используем QFutureWatcher
+    QFutureWatcher<void> futureWatcher;
 
 };
 #endif // MAINWINDOW_H

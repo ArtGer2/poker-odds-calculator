@@ -40,12 +40,10 @@ void DropLabel::dropEvent(QDropEvent *event) {
 
         QList<DraggableLabel*> existingWidgets = findChildren<DraggableLabel*>();
         if (!existingWidgets.isEmpty()) {
-            // Возвращаем старый виджет на его исходное место
+
             existingWidgets.first()->restoreLastPosition();
 
         }
-        // Получаем текст из перетаскиваемого виджета
-
 
 
 
