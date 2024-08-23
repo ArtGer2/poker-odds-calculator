@@ -11,17 +11,29 @@
    </rect>
   </property>
   <property name="windowTitle">
-   <string>MainWindow</string>
+   <string>Poker Odds Calculator</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true"> background-color: #7ab;</string>
   </property>
   <widget class="QWidget" name="centralwidget">
    <widget class="QPushButton" name="pushButton">
     <property name="geometry">
      <rect>
-      <x>10</x>
-      <y>600</y>
+      <x>30</x>
+      <y>590</y>
       <width>111</width>
       <height>41</height>
      </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">    background-color: #5a9;
+    border: 1px solid #488;
+    border-radius: 8px;
+    padding: 10px 20px;
+    font-family: 'Segoe UI', sans-serif;
+    font-size: 14pt;
+    color: white;</string>
     </property>
     <property name="text">
      <string>cards</string>
@@ -37,7 +49,16 @@
      </rect>
     </property>
     <property name="autoFillBackground">
-     <bool>true</bool>
+     <bool>false</bool>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">   font-family: 'Segoe UI', sans-serif;
+    font-size: 20pt;
+    color: #228B22;
+    padding: 5px;
+    border-radius: 5px;
+    background-color: #e8f5e9;
+    border: 1px solid #c8e6c9;</string>
     </property>
    </widget>
    <widget class="DropLabel" name="PlayerLabel2" native="true">
@@ -50,7 +71,16 @@
      </rect>
     </property>
     <property name="autoFillBackground">
-     <bool>true</bool>
+     <bool>false</bool>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">   font-family: 'Segoe UI', sans-serif;
+    font-size: 20pt;
+    color: #228B22;
+    padding: 5px;
+    border-radius: 5px;
+    background-color: #e8f5e9;
+    border: 1px solid #c8e6c9;</string>
     </property>
    </widget>
    <widget class="DropLabel" name="TableLabel1" native="true">
@@ -63,7 +93,16 @@
      </rect>
     </property>
     <property name="autoFillBackground">
-     <bool>true</bool>
+     <bool>false</bool>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">   font-family: 'Segoe UI', sans-serif;
+    font-size: 20pt;
+    color: #228B22;
+    padding: 5px;
+    border-radius: 5px;
+    background-color: #e8f5e9;
+    border: 1px solid #c8e6c9;</string>
     </property>
    </widget>
    <widget class="DropLabel" name="TableLabel2" native="true">
@@ -76,7 +115,16 @@
      </rect>
     </property>
     <property name="autoFillBackground">
-     <bool>true</bool>
+     <bool>false</bool>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">   font-family: 'Segoe UI', sans-serif;
+    font-size: 20pt;
+    color: #228B22;
+    padding: 5px;
+    border-radius: 5px;
+    background-color: #e8f5e9;
+    border: 1px solid #c8e6c9;</string>
     </property>
    </widget>
    <widget class="DropLabel" name="TableLabel3" native="true">
@@ -89,17 +137,31 @@
      </rect>
     </property>
     <property name="autoFillBackground">
-     <bool>true</bool>
+     <bool>false</bool>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">   font-family: 'Segoe UI', sans-serif;
+    font-size: 20pt;
+    color: #228B22;
+    padding: 5px;
+    border-radius: 5px;
+    background-color: #e8f5e9;
+    border: 1px solid #c8e6c9;</string>
     </property>
    </widget>
    <widget class="QLabel" name="label_3">
     <property name="geometry">
      <rect>
-      <x>490</x>
-      <y>380</y>
+      <x>480</x>
+      <y>370</y>
       <width>101</width>
       <height>21</height>
      </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">    font-family: 'Segoe UI', sans-serif;
+    font-size: 16pt;
+    color: #333;</string>
     </property>
     <property name="text">
      <string>Your cards</string>
@@ -108,11 +170,16 @@
    <widget class="QLabel" name="label_4">
     <property name="geometry">
      <rect>
-      <x>520</x>
+      <x>510</x>
       <y>30</y>
       <width>101</width>
       <height>21</height>
      </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">    font-family: 'Segoe UI', sans-serif;
+    font-size: 16pt;
+    color: #333;</string>
     </property>
     <property name="text">
      <string>Table</string>
@@ -128,7 +195,16 @@
      </rect>
     </property>
     <property name="autoFillBackground">
-     <bool>true</bool>
+     <bool>false</bool>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">   font-family: 'Segoe UI', sans-serif;
+    font-size: 20pt;
+    color: #228B22;
+    padding: 5px;
+    border-radius: 5px;
+    background-color: #e8f5e9;
+    border: 1px solid #c8e6c9;</string>
     </property>
    </widget>
    <widget class="DropLabel" name="TableLabel5" native="true">
@@ -141,17 +217,66 @@
      </rect>
     </property>
     <property name="autoFillBackground">
-     <bool>true</bool>
+     <bool>false</bool>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">   font-family: 'Segoe UI', sans-serif;
+    font-size: 20pt;
+    color: #228B22;
+    padding: 5px;
+    border-radius: 5px;
+    background-color: #e8f5e9;
+    border: 1px solid #c8e6c9;</string>
     </property>
    </widget>
    <widget class="QSpinBox" name="spinBox">
     <property name="geometry">
      <rect>
-      <x>900</x>
-      <y>610</y>
+      <x>810</x>
+      <y>590</y>
       <width>121</width>
-      <height>31</height>
+      <height>41</height>
      </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QSpinBox {
+    background-color: #f5f5f5; /* Light gray background */
+    border: 1px solid #b0b0b0; /* Soft border */
+    border-radius: 6px; /* Rounded corners */
+    padding: 4px 10px; /* Padding inside the spin box */
+    font-family: 'Segoe UI', sans-serif; /* Font family */
+    font-size: 14pt; /* Font size */
+    color: #333; /* Text color */
+}
+
+/* Arrow Buttons Styling */
+QSpinBox::up-button, QSpinBox::down-button {
+    border: 1px solid #b0b0b0; /* Soft border for buttons */
+    border-radius: 4px; /* Rounded corners for buttons */
+    background-color: #ffffff; /* White background */
+    width: 16px; /* Width of the button */
+    height: 16px; /* Height of the button */
+}
+
+/* Arrow Buttons Hover State */
+QSpinBox::up-button:hover, QSpinBox::down-button:hover {
+    background-color: #e0e0e0; /* Slightly darker background on hover */
+}
+
+/* Arrow Buttons Arrow Styling */
+QSpinBox::up-arrow, QSpinBox::down-arrow {
+    width: 10px; /* Width of the arrow */
+    height: 10px; /* Height of the arrow */
+}
+
+/* Control Buttons Background and Arrow Color */
+QSpinBox::up-button::default, QSpinBox::down-button::default {
+    background-color: #d0d0d0; /* Default background color */
+}
+
+QSpinBox::up-button::default:hover, QSpinBox::down-button::default:hover {
+    background-color: #c0c0c0; /* Hover background color */
+}</string>
     </property>
     <property name="minimum">
      <number>2</number>
@@ -163,11 +288,18 @@
    <widget class="QLabel" name="label_5">
     <property name="geometry">
      <rect>
-      <x>900</x>
-      <y>580</y>
+      <x>810</x>
+      <y>550</y>
       <width>121</width>
-      <height>21</height>
+      <height>31</height>
      </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLabel {
+    font-family: 'Segoe UI', sans-serif;
+    font-size: 16pt;
+    color: #333;
+}</string>
     </property>
     <property name="text">
      <string>Players num</string>
@@ -177,13 +309,15 @@
     <property name="geometry">
      <rect>
       <x>730</x>
-      <y>410</y>
+      <y>360</y>
       <width>201</width>
       <height>41</height>
      </rect>
     </property>
     <property name="styleSheet">
-     <string notr="true">font: 20pt &quot;Comic Sans MS&quot;;</string>
+     <string notr="true">    font-family: 'Segoe UI', sans-serif;
+    font-size: 16pt;
+    color: #333;</string>
     </property>
     <property name="text">
      <string>Chances</string>
@@ -193,13 +327,15 @@
     <property name="geometry">
      <rect>
       <x>730</x>
-      <y>460</y>
+      <y>410</y>
       <width>61</width>
       <height>41</height>
      </rect>
     </property>
     <property name="styleSheet">
-     <string notr="true">font: 20pt &quot;Comic Sans MS&quot;;</string>
+     <string notr="true">    font-family: 'Segoe UI', sans-serif;
+    font-size: 16pt;
+    color: #333;</string>
     </property>
     <property name="text">
      <string>Win:</string>
@@ -209,13 +345,15 @@
     <property name="geometry">
      <rect>
       <x>730</x>
-      <y>510</y>
+      <y>460</y>
       <width>51</width>
       <height>41</height>
      </rect>
     </property>
     <property name="styleSheet">
-     <string notr="true">font: 20pt &quot;Comic Sans MS&quot;;</string>
+     <string notr="true">    font-family: 'Segoe UI', sans-serif;
+    font-size: 16pt;
+    color: #333;</string>
     </property>
     <property name="text">
      <string>Tie:</string>
@@ -225,13 +363,19 @@
     <property name="geometry">
      <rect>
       <x>810</x>
-      <y>460</y>
+      <y>410</y>
       <width>271</width>
       <height>41</height>
      </rect>
     </property>
     <property name="styleSheet">
-     <string notr="true">font: 20pt &quot;Comic Sans MS&quot;;</string>
+     <string notr="true">    font-family: 'Segoe UI', sans-serif;
+    font-size: 20pt;
+    color: #228B22;
+    padding: 5px;
+    border-radius: 5px;
+    background-color: #e8f5e9;
+    border: 1px solid #c8e6c9;</string>
     </property>
     <property name="text">
      <string/>
@@ -241,13 +385,19 @@
     <property name="geometry">
      <rect>
       <x>810</x>
-      <y>510</y>
+      <y>460</y>
       <width>271</width>
       <height>41</height>
      </rect>
     </property>
     <property name="styleSheet">
-     <string notr="true">font: 20pt &quot;Comic Sans MS&quot;;</string>
+     <string notr="true">    font-family: 'Segoe UI', sans-serif;
+    font-size: 20pt;
+    color: #228B22;
+    padding: 5px;
+    border-radius: 5px;
+    background-color: #e8f5e9;
+    border: 1px solid #c8e6c9;</string>
     </property>
     <property name="text">
      <string/>

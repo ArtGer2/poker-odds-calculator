@@ -23,7 +23,7 @@ void CardChoise::createCard(QGridLayout *gridLayout, int &row, int &column, cons
     draggableLabel->label ->setFixedSize(initialSize);
     QPixmap pixmap(imagePath);
     draggableLabel->TextLabel.setText(cardText);
-    draggableLabel->label->setPixmap(pixmap.scaled(draggableLabel->label->size(), Qt::KeepAspectRatio));
+    draggableLabel->label->setPixmap(pixmap.scaled(draggableLabel->label->size()*0.9, Qt::KeepAspectRatio));
 
 
     draggableLabel->SaveLastPosition();
@@ -31,7 +31,7 @@ void CardChoise::createCard(QGridLayout *gridLayout, int &row, int &column, cons
     gridLayout->addWidget(drop, row, column);
 
     column++;
-    if (column == 10) {
+    if (column == 12) {
         column = 0;
         row++;
     }

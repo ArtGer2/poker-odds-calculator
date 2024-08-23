@@ -9,9 +9,6 @@ DropLabel::DropLabel(QWidget *parent): QWidget(parent) {
     QVBoxLayout *layout = new QVBoxLayout(this);
     layout->addWidget(imageLabel);
     setLayout(layout);
-
-    // Установка цвета фона для DropLabel
-    setStyleSheet("background-color: lightblack;"); // Измените цвет на нужный вам
 }
 
 void DropLabel::dragEnterEvent(QDragEnterEvent *event) {
